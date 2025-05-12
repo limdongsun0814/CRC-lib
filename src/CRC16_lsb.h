@@ -1,5 +1,5 @@
-#ifndef CRC16_H
-#define CRC16_H
+#ifndef CRC16_MSB_H
+#define CRC16_MSB_H
 
 #include <stdint.h>
 #include <stddef.h>
@@ -15,8 +15,8 @@ class CRC16 {
         bool refIn_;
         bool refOut_;
         uint16_t xorOut_;
-        uint16_t poly_;
-        uint16_t init_;
+        uint16_t poly_reverse_;
+        uint16_t init_reverse_;
 };
 
 #endif

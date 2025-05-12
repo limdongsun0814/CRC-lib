@@ -1,6 +1,6 @@
-#include "CRC16.h"
+#include "CRC16_msb.h"
 
-
+//msb
 CRC16::CRC16(uint16_t poly, uint16_t init, bool refIn, bool refOut, uint16_t xorOut)
     :poly_(poly),init_(init),xorOut_(xorOut),refOut_(refOut),refIn_(refIn){}
 
@@ -9,7 +9,7 @@ uint16_t CRC16::calculate(const uint8_t *input, uint8_t length){
 
     for(uint8_t i = 0; i <length; i++){
         uint8_t data=input[i];
-        if(refOut_){
+        if(refIn_){
             data = reverse(input[i]);
         }
 

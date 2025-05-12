@@ -1,5 +1,7 @@
 #include <iostream>
-#include "../../src/CRC16.h"
+#include "../../src/CRC16_lsb.h"
+// #include "../../src/CRC16_modbus.h"
+// #include "../../src/CRC16_msb.h"
 
 int main() {
     uint8_t data[] = {0x01, 0x03, 0x00, 0x00, 0x00, 0x02}; 
