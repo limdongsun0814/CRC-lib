@@ -7,7 +7,7 @@ int main() {
 
     // CRC-16/MODBUS
     uint16_t crc = CRC16Modbus::calculate(data,length); 
-    std::cout << "CRC-16/ARC: 0x" << std::hex << crc  << std::endl;
+    std::cout << "CRC-16/Modbus: 0x" << std::hex << crc  << std::endl;
 
     std::cin.get(); 
     return 0;
