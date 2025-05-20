@@ -1,6 +1,8 @@
-#include "CRC16_umts.h"
+#include "crc16_umts.h"
 
-uint16_t CRC16Umts::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0x8005;
 

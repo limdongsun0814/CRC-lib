@@ -1,6 +1,8 @@
-#include "CRC16_profibus.h"
+#include "crc16_profibus.h"
 
-uint16_t CRC16Profibus::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0xFFFF;
     uint16_t ploy = 0x1DCF;
 

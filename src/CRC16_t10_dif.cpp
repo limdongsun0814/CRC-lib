@@ -1,6 +1,8 @@
-#include "CRC16_t10_dif.h"
+#include "crc16_t10_dif.h"
 
-uint16_t CRC16T10_Dif::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0x8BB7;
 

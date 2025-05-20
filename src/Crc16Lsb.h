@@ -1,12 +1,12 @@
-#ifndef CRC16_MSB_H
-#define CRC16_MSB_H
+#ifndef Crc16LSB_H
+#define Crc16LSB_H
 
 #include <stdint.h>
 #include <stddef.h>
 
-class CRC16 {
+class Crc16Lsb {
     public:
-        CRC16(uint16_t poly,uint16_t init,bool RefIn,bool RefOut,uint16_t XorOut);
+        Crc16Lsb(uint16_t poly,uint16_t init,bool RefIn,bool RefOut,uint16_t XorOut);
         uint16_t calculate(const uint8_t *data,uint8_t length);
     private:
         uint8_t reverse(const uint8_t data);

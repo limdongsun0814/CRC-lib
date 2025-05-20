@@ -1,6 +1,8 @@
-#include "CRC16_maxim_dow.h"
+#include "crc16_maxim_dow.h"
 
-uint16_t CRC16Maxim_Dow::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0xA001;
 

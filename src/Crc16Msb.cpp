@@ -1,10 +1,10 @@
-#include "CRC16_msb.h"
+#include "Crc16Msb.h"
 
 //msb
-CRC16::CRC16(uint16_t poly, uint16_t init, bool refIn, bool refOut, uint16_t xorOut)
+Crc16Msb::Crc16Msb(uint16_t poly, uint16_t init, bool refIn, bool refOut, uint16_t xorOut)
     :poly_(poly),init_(init),xorOut_(xorOut),refOut_(refOut),refIn_(refIn){}
 
-uint16_t CRC16::calculate(const uint8_t *input, uint8_t length){
+uint16_t Crc16Msb::calculate(const uint8_t *input, uint8_t length){
     uint16_t crc = init_;
 
     for(uint8_t i = 0; i <length; i++){
@@ -31,7 +31,7 @@ uint16_t CRC16::calculate(const uint8_t *input, uint8_t length){
     return crc^xorOut_;
 }
 
-uint16_t CRC16::reverse(uint16_t data){
+uint16_t Crc16Msb::reverse(uint16_t data){
     uint16_t result=0;
     for(uint8_t j=0; j<16; j++){
         if((data>>j)&0x01){
@@ -41,7 +41,7 @@ uint16_t CRC16::reverse(uint16_t data){
     return result;
 }
 
-uint8_t CRC16::reverse(const uint8_t data){
+uint8_t Crc16Msb::reverse(const uint8_t data){
     uint8_t length = sizeof(data);
     uint8_t result=0;
     for(int i=0; i<8; i++){
@@ -52,7 +52,7 @@ uint8_t CRC16::reverse(const uint8_t data){
     return result;
 }
 
-uint8_t* CRC16::copy(const uint8_t *data){
+uint8_t* Crc16Msb::copy(const uint8_t *data){
     uint8_t length = sizeof(data);
     uint8_t* result;
     for(uint8_t i=0; i<length; i++){

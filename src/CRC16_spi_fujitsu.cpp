@@ -1,6 +1,8 @@
-#include "CRC16_spi_fujitsu.h"
+#include "crc16_spi_fujitsu.h"
 
-uint16_t CRC16Spi_Fujitsu::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x1D0F;
     uint16_t ploy = 0x1021;
 

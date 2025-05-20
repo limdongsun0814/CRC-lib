@@ -1,6 +1,8 @@
-#include "CRC16_opensafety_b.h"
+#include "crc16_opensafety_b.h"
 
-uint16_t CRC16Opensafety_b::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0x755B;
 

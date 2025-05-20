@@ -1,6 +1,8 @@
-#include "CRC16_lj1200.h"
+#include "crc16_lj1200.h"
 
-uint16_t CRC16Lj1200::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0x6F63; 
 

@@ -1,6 +1,8 @@
-#include "CRC16_ibm_3740.h"
+#include "crc16_ibm_3740.h"
 
-uint16_t CRC16Ibm_3740::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0xFFFF;
     uint16_t ploy = 0x1021;
 

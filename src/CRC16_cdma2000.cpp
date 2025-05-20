@@ -1,6 +1,8 @@
-#include "CRC16_cdma2000.h"
+#include "crc16_cdma2000.h"
 
-uint16_t CRC16Cdma2000::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0xFFFF;
     uint16_t ploy = 0xC867;
 

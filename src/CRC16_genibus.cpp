@@ -1,6 +1,8 @@
-#include "CRC16_genibus.h"
+#include "crc16_genibus.h"
 
-uint16_t CRC16Genibus::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0xFFFF;
     uint16_t ploy = 0x1021;
 

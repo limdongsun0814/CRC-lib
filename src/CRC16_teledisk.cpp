@@ -1,6 +1,8 @@
-#include "CRC16_teledisk.h"
+#include "crc16_teledisk.h"
 
-uint16_t CRC16Teledisk::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0xA097;
 

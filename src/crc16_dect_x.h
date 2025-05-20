@@ -1,5 +1,5 @@
-#ifndef CRC16_USB_H
-#define CRC16_USB_H
+#ifndef CRC16_DECT_X_H
+#define CRC16_DECT_X_H
 
 #include <stdint.h>
 #include <stddef.h>

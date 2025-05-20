@@ -1,6 +1,8 @@
-#include "CRC16_dds-110.h"
+#include "crc16_dds_110.h"
 
-uint16_t CRC16dds_110::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x800D;
     uint16_t ploy = 0x8005;
 

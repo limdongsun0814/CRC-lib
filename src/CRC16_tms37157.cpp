@@ -1,6 +1,8 @@
-#include "CRC16_tms37157.h"
+#include "crc16_tms37157.h"
 
-uint16_t CRC16Tms37157::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x3791;
     uint16_t ploy = 0x8408;
 

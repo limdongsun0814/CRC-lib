@@ -1,14 +1,17 @@
 #include <iostream>
-#include "../../src/CRC16_en_13757.h"
+
+#include "../../src/crc16_en_13757.h"
+
 
 int main() {
     uint8_t data[] = {0x01, 0x03, 0x00, 0x00, 0x00, 0x02}; 
     uint8_t length = sizeof(data);
 
-    // CRC-16/ARC
-    uint16_t crc = CRC16En13757::calculate(data,length); 
-    std::cout << "CRC-16/ARC: 0x" << std::hex << crc  << std::endl;
+    // CRC-16/EN-13757
+    uint16_t crc = calculate(data,length); 
 
-    std::cin.get(); 
+    std::cout << "CRC-16/EN-13757: 0x" << std::hex << crc  << std::endl;
+
+
     return 0;
 }

@@ -1,6 +1,8 @@
-#include "CRC16_en_13757.h"
+#include "crc16_en_13757.h"
 
-uint16_t CRC16En13757::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0x3D65;
 

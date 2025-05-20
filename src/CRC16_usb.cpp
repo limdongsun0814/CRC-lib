@@ -1,6 +1,8 @@
-#include "CRC16_usb.h"
+#include "crc16_usb.h"
 
-uint16_t CRC16Usb::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0xFFFF;
     uint16_t ploy = 0xA001;
 

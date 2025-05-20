@@ -1,6 +1,8 @@
-#include "CRC16_dect-x.h"
+#include "crc16_dect_r.h"
 
-uint16_t CRC16Dect_x::calculate(const uint8_t *data, uint8_t length){
+
+uint16_t calculate(const uint8_t *data, uint8_t length){
+
     uint16_t crc = 0x0000;
     uint16_t ploy = 0x0589;
 
@@ -15,5 +17,5 @@ uint16_t CRC16Dect_x::calculate(const uint8_t *data, uint8_t length){
             }
         }
     }
-    return crc;
+    return crc^0x0001;
 }
