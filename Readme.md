@@ -16,8 +16,8 @@
 
 ## 🚀 기능
 
-- 지원하는 CRC 알고리즘 목록 (또는 지원하는 비트 너비 및 매개변수):
-  - CRC-16 (예: CRC-16/MODBUS, CRC16-ARC, CRC16-CDMA2000, CRC16-CMS, CRC-16 등)
+- 지원하는 CRC 알고리즘 종류 및 매개변수:
+  - CRC-16 (예: CRC16/MODBUS, CRC16/ARC, CRC16/CDMA2000, CRC16/CMS, CRC16 등)
   - **주요 매개변수 지원:** Polynomial, Initial Value, RefIn, RefOut, XOR Out
 
 ## 💡 사용법
